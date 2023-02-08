@@ -235,7 +235,7 @@ jobs:
 
     # Download KeyVault Secrets
     - name: Download KeyVault Secrets
-      uses: Azure/get-keyvault-secrets@v1.0
+      uses: Azure/get-keyvault-secrets@v1
       if: ${{ github.event.inputs.MODE == 'Databricks' }}
       with:
         keyvault: ${{ env.keyVaultName }}
